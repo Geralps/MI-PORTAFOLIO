@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#inicio" aria-label="Ir a Inicio">Inicio</a></li>
+                <li><a href="#sobre-mi" aria-label="Ir a Sobre Mí">Sobre Mí</a></li>
+                <li><a href="#proyectos" aria-label="Ir a Proyectos">Proyectos</a></li>
+                <li><a href="#habilidades" aria-label="Ir a Habilidades">Habilidades</a></li>
+                <li><a href="#contacto" aria-label="Ir a Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="inicio">
+        <h1>Bienvenido a Mi Portafolio</h1>
+        <p>Hola, soy Lizeth Geraldine Peña. Soy Contadora Publica y este es mi portafolio.</p>
+        <p>Ofrezco asesoría financiera, análisis de inversiones y gestión de riesgos.</p>
+        <div class="container-img-profile">
+            <img class="img-profile" src="assets/images/foto portafolio.jpg" alt="imagen perfil">
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>Contadora pública con más de 3 años de experiencia, Diplomado en gerencia financiera y administrativa con SAP Business One, y un profundo conocimiento certificable en herramientas como SAP SIIGO ELISA y SIESA ENTERPRISE. He trabajado en empresas de diversos sectores, proporcionando informes financieros que apoyan la toma de decisiones estratégicas.</p>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="proyecto">
+            <h3>CHATBOT TELEGRAM</h3>
+            <p>*Nos familiarizamos con la estructura de nuestro proyecto en IntelliJ IDEA, aprendimos cómo registrar un bot en Telegram y cómo escribir el primer mensaje para el usuario.</p>
+            <p>*Aprendimos a formatear el texto de respuesta del bot y comenzamos a trabajar en la expansión de funcionalidades para manejar mensajes adicionales.</p>
+            <p>*Aprendimos a enviar mensajes mediante botones.</p>
+            <p>*En la etapa final, agregamos imágenes a las respuestas para hacerlas más interesantes.</p>
+        </div>
+        <div class="container-img-profile">
+            <img class="img-profile" src="assets/images/chatbot.jpg" alt="imagen chatbot">
+        </div>
+    </section>
+     <!-- Sección de habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+    <div class="habilidad">
+        <p>Gestion de Proyectos</p>
+        <div class="icono">
+            <img src="assets/images/stock-vector-increase-profits-vector-icon-money-white-background-1415193131.jpg" alt="Gestión de Presupuestos">
+        </div>
+        <div class="barra">
+            <div class="nivel avanzado" data-width="80%"></div>
+        </div>
+        <p class="etiqueta">Avanzado</p>
+    </div>
+    <div class="habilidad">
+        <p>Atencion al Cliente</p>
+        <div class="icono">
+            <img src="assets/images/stock-vector-customer-care-service-vector-icon-retention-client-sign-people-protection-and-safety-vector-icon-2490010251.jpg" alt="Atención al Cliente">
+        </div>
+        <div class="barra">
+            <div class="nivel intermedio" data-width="60%"></div>
+        </div>
+        <p class="etiqueta">Intermedio</p>
+    </div>
+
+    <div class="habilidad">
+        <p>Analisis Financiero</p>
+        <div class="icono">
+            <img src="assets/images/stock-vector-financial-analysis-icon-business-icon-2224126845.jpg" alt="Análisis Financiero">
+        </div>
+        <div class="barra">
+            <div class="nivel intermedio" data-width="60%"></div>
+        </div>
+        <p class="etiqueta">Intermedio</p>
+    </div>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <p>Email: lizethgeraldinecontable@gmail.com</p>
+            <p>Teléfono: +57 3208118618</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/geraldin-santamaria-950294251/">linkedin.com</a></p>
+            <p>GitHub: <a href="https://github.com/tu-usuario">github.com/</a></p>
+        </div>
+    </section>
+        <!-- Sección de solicitudes -->
+        <section id="solicitudes">
+            <h2>solicitudes</h2>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Lizeth Geraldine Peña. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
